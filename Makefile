@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: GPL-2.0
 VERSION = 4
 PATCHLEVEL = 14
-SUBLEVEL = 229
+SUBLEVEL = 231
 EXTRAVERSION =
 NAME = Petit Gorille
 
@@ -114,6 +114,8 @@ export quiet Q KBUILD_VERBOSE
 # KBUILD_SRC is not intended to be used by the regular user (for now),
 # it is set on invocation of make with KBUILD_OUTPUT or O= specified.
 ifeq ($(KBUILD_SRC),)
+
+KBUILD_OUTPUT := out
 
 # OK, Make called in directory where kernel src resides
 # Do we want to locate output files in a separate directory?
