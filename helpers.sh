@@ -14,7 +14,7 @@
 #### CONFIGURATION ####
 
 # Kernel name
-kernel_name="F1xy"
+kernel_name="Spark"
 
 # Defconfig name
 defconfig="davinci_defconfig"
